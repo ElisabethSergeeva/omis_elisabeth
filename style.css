@@ -1,0 +1,24 @@
+
+h1 {
+    color:red;
+    font-size: 50px;
+
+}
+/*
+linking variant 2 =>
+*/
+
+.my-header {
+            font-style: italic;
+            text-decoration:underline;
+
+                 
+}
+
+/* linking variant 3 => ID */
+#id-for-header {
+
+       color:blue;
+       letter-spacing: 15px;
+
+}
