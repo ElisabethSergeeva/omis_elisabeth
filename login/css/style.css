@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Roboto:ital,wght@0,100;0,400;0,900;1,400;1,900&display=swap');
+
+
+
+body {
+    background: rgb(59,68,127);
+    background: linear-gradient(137deg, rgba(59,68,127,1) 0%, rgba(101,22,80,1) 100%); 
+   
+    margin:  0;
+    padding: 0;
+
+    display:  flex;
+    align-items: center;
+    min-height:  100vh; 
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.mainloginBox {
+            width: 200px;
+
+            border-width: 1px;
+            border-color:  red;
+            border-style: solid;
+
+            margin: auto; 
+            
+
+}
+
+    /* user Photo */
+
+
+.userPhoto {
+    color: white;
+width: 65px;
+        height: 65px;
+
+border-width: 2px;
+border-color: white;
+border-style: solid;
+border-radius: 100%;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto; 
+
+}
+
+.userPhoto .fa-user-astronaut {
+
+        font-size: 45px;  /* icon size*/
+    
+    
+}
+
+      /* header */ 
+
+      .mainloginBox h1 {
+           color: white;
+           text-align: center;
+           font-weight: 100;
+           text-transform: capitalize;
+
+           position: relative;
+           overflow: hidden;
+
+      }
+
+      .mainloginBox h1:before, h1:after {
+position:  absolute;
+top: 51%;
+overflow: hidden;
+width:  50%;
+height: 1px;
+content: '\a0';
+background-color: white;
+
+
+}
+.mainloginBox h1:before {
+margin-left: -50%;
+text-align: right;
+
+}
