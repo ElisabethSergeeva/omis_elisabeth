@@ -1,0 +1,129 @@
+.pseudoClass::before {
+      content: "";
+      font-size: 50px;
+      color: red;
+
+      /*position:realative;
+
+      left: 50px;*/
+      background: url('../img/quote.jpg');
+      width: 50px;
+      height: 50px;
+      display: block;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+
+
+}
+
+.pseudoClass::after {
+      content: "";
+      font-size: 50px;
+      color: red;
+
+      /*position:realative;
+ 
+       left: 50px;*/
+      background: url('../img/quote.jpg');
+      width: 50px;
+      height: 50px;
+      display: block;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+}
+
+a:hover {
+      color: red;
+      text-decoration: line-through;
+
+}
+
+a:link,
+a:active,
+a:visited {
+      color: aqua;
+
+}
+
+ul li:first-child {
+      background-color: aquamarine;
+
+}
+
+ul li::last-child {
+      background-color: aquamarine;
+      font-weight: bold;
+      color: red;
+
+}
+
+ul li:nth-child(3) {
+      background-color: blueviolet;
+
+}
+
+ul li:first-child::before {
+      content: "v:";
+      background-color: aquamarine;
+}
+
+
+p::first-line {
+      background-color: chocolate;
+
+}
+
+p::first-letter {
+      font-size: 50px;
+      color: blue;
+      font-weight: bold;
+
+
+}
+
+
+
+
+
+/*FLEX */
+
+.container div {
+      border: 1px solid gray;
+}
+
+.container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height: 400px;
+      border: 1px solid gray;
+      flex-direction: row;
+      column-gap: 10px;
+      row-gap: 10px;
+
+}
+
+/*1=100% */
+/*
+
+.container div:first-child{
+       background-color: aqua;
+       flex-grow: 1;
+
+
+.container div:last-child{
+      background-color: aqua;
+      flex-grow: 1; 
+}
+.container div:nth-child(2){
+      background-color: aqua;
+      flex-grow: 2; 
+}*/
+
+/* website */
+
+
+
