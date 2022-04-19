@@ -1,19 +1,24 @@
+:root {
+      --main-color: rgb(218, 59, 194);
+
+}
 
 
 /* menu*/
-nav{
-     display: flex;
-     justify-content: space-between;
+nav {
+      display: flex;
+      justify-content: space-between;
 
 }
 
-nav img{
+nav img {
       width: 75px;
 
 }
-nav ul{
-    padding: 0;
-    margin: 0;
+
+nav ul {
+      padding: 0;
+      margin: 0;
 
 
 }
@@ -21,7 +26,7 @@ nav ul{
 
 
 
-nav ul li{
+nav ul li {
       display: inline-block;
       list-style-type: none;
       width: 75px;
@@ -30,22 +35,22 @@ nav ul li{
 
 nav ul li a {
 
-         text-decoration: none;
-         color: black;
-        /* font-weight:  bold; */
+      text-decoration: none;
+      color: black;
+      /* font-weight:  bold; */
 }
 
-nav ul li a:hover{
-             text-decoration: underline;
+nav ul li a:hover {
+      text-decoration: underline;
 
 
 }
-       
 
 
-nav ul li:last-child{
-      background-color: rgb(218,59,194);
-      color:white;
+
+nav ul li:last-child {
+      background-color: rgb(218, 59, 194);
+      color: white;
       text-transform: uppercase;
       font-size: 12px;
       border-radius: 15px;
@@ -56,11 +61,159 @@ nav ul li:last-child{
 
 /* header slider */
 
-.slider{
-    height: 200px;
-    background-image: url('../img/cafe_.jpg');
-    background-size: ;
+.slider {
+      height: 350px;
+      background-image: url('../img/cafe_.jpg');
+
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+}
+
+
+.slideBoxes {
+      display: flex;
+      justify-content: center;
+
+
+}
+
+
+.slideBoxes div {
+      background-color: white;
+      display: inline-block;
+      width: 200px;
+      text-align: center;
+      padding: 15px;
+
+}
+
+.slideBoxes div:nth-child(2) {
+      background-color: gainsboro;
+
+}
+
+.slideBoxes div i {
+      color: rgb(218, 59, 194);
+
+
+}
+
+.slideBoxes div h3 {
+      font-size: 14px;
+      text-transform: capitalize;
+}
+
+.slideBoxes div p {
+      font-size: 12px;
+      color: gray;
+
+}
+
+
+.slideText {
+      color: white;
+      text-align: center;
+      padding-top: 25px;
+      padding-bottom: 25px;
+
+
+}
+
+.slideText p {
+      font-size: 13px;
+
+
+}
+
+.slideText button {
+      background-color: rgb(218, 59, 194);
+      color: white;
+      text-transform: uppercase;
+      font-size: 12px;
+      border-radius: 15px;
+      padding: 5px;
+      border: 0;
+
+
+}
+
+/* custom rows*/
+/*ROW 1*/
+
+.middleSection {
+      width: 75%;
+      margin: auto;
+
+}
+.middleSection h1 {
+      text-align: center;  
+      margin-top: 50px;   
+      margin-bottom: 50px;
+
+}
+      
 
 
 
+.customRow {
+      display: flex;
+      flex-direction: row;
+      margin-top: 20px;
+
+}
+
+.customRow div {
+      width: 50%;
+      height: 250px;
+
+}
+
+.customRow .image1 {
+      background-image:
+            url('https://picsum.photos/id/1060/500/250');
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+.customRow .image2 {
+      background-image:
+            url('https://picsum.photos/id/163/500/250');
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+
+.customRow:nth-child(even) {
+      flex-direction: row-reverse;
+
+}
+
+.customRow h3 {
+      color: var(--main-color);
+}
+
+.customRow .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      padding-left: 50px;
+      padding-right: 50px;
+      box-sizing: border-box;
+
+}
+
+.customRow .content button {
+      background-color: rgb(218, 59, 194);
+      color: white;
+      text-transform: uppercase;
+      font-size: 12px;
+      border-radius: 25px;
+      padding: 10px;
+      border: 0;
+      width: 150px;
 }
