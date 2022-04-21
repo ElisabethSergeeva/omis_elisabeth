@@ -41,7 +41,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-      text-decoration: underline;
+      text-decoration: none;
+      background-color: antiquewhite;
 
 
 }
@@ -56,8 +57,41 @@ nav ul li:last-child {
       border-radius: 15px;
       padding: 5px;
 
+}
+
+.dropdown-content{
+           display: none;
+           position: absolute;
+           box-shadow: 5px 5px 15px 2px #000000;;
+           z-index: 1;
+           background-color: white;
+           width: 125px;
+       
+}
+
+.dropdown-content a {
+
+      width: 100%;
+      display: block;
+      text-align: left;
+      padding-left: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+
+      box-sizing: border-box;
+
+
 
 }
+
+.dropdown:hover .dropdown-content {
+            display: block;
+
+}
+
+
+
 
 /* header slider */
 
@@ -149,13 +183,14 @@ nav ul li:last-child {
       margin: auto;
 
 }
+
 .middleSection h1 {
-      text-align: center;  
-      margin-top: 50px;   
+      text-align: center;
+      margin-top: 50px;
       margin-bottom: 50px;
 
 }
-      
+
 
 
 
@@ -207,7 +242,7 @@ nav ul li:last-child {
 
 }
 
-.customRow .content button {
+.customRow .content button, .footerSlide button {
       background-color: rgb(218, 59, 194);
       color: white;
       text-transform: uppercase;
@@ -217,3 +252,125 @@ nav ul li:last-child {
       border: 0;
       width: 150px;
 }
+
+
+/*footer slide*/
+
+.footerSlide {
+      width: 75%;
+      height: 350px;
+      position: relative;
+      margin: auto;
+      margin-top: 50px;
+
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-top: 100px;
+      padding-bottom: 75px;
+}
+
+
+.footerSlide div {
+      z-index: 1;
+      color: white;
+
+
+}
+
+
+
+
+
+
+
+.footerSlide::before {
+      content: '';
+      background-image: url('https://picsum.photos/id/20/1920/450');
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+
+
+
+
+
+      filter: blur(3px) brightness(0.5);
+      background-size: cover;
+
+
+}
+
+
+.footerSlide div:first-child,
+.footerSlide div :nth-child(2) {
+
+      width: 25%;
+}
+
+
+.footerSlide div:last-child {
+         width: 50%;
+
+}
+
+
+
+
+
+
+.footerSlide div:last-child h3 {
+         font-size: 35px;
+         margin bottom: 30px;
+         margin-top: 5px;
+
+
+}     
+
+.footerSlide a {
+     color:var(--main-color);
+}
+
+/* team members */
+
+
+.team{
+     width: 75%;
+     margin: auto;
+
+
+
+}
+
+
+
+
+.team h1{
+      text-align: center;
+       font-size: 40px;
+      margin-top: 75px;
+}
+
+
+.team div{
+      display: flex;
+      justify-content: center;
+}
+.team .teamMember{
+     width: 200px;
+     height: 200px;
+
+}
+
+.team div div{
+
+      margin-left: 10px;
+}
+
+
+
