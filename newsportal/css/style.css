@@ -1,0 +1,153 @@
+:root {
+    --header-bg-dark: #343436;
+    --main-red: #ce1a1d;
+    --header-bg-dark-light: #464648;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+
+.row {
+    width: 100%;
+}
+
+.row:first-child {
+    background-color: var(--header-bg-dark);
+    color: white;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* top menu */
+.row:first-child ul {
+    list-style-type: none;
+}
+
+.row:first-child ul li {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-left: 1px solid gray;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+
+.row:first-child ul li:last-child {
+    border-right: 1px solid gray;
+
+}
+
+.row:first-child ul a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.row:first-child ul a:hover {
+    color: white;
+    text-decoration: underline;
+
+}
+
+
+/* search form */
+
+
+.row:first-child form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.row:first-child form input[name="search"] {
+    border: 0;
+    outline: none;
+    background-color: var(--header-bg-dark);
+    width: 100px;
+    color: var(--main-red);
+}
+
+
+.row:first-child form input[name="search"]::placeholder {
+    color: var(--main-red);
+    text-transform: capitalize;
+
+}
+
+.row:first-child form button {
+    border: 0;
+    background-color: var(--header-bg-dark);
+    color: white;
+}
+
+/*header center row width logo */
+
+.row:nth-child(2) {
+    background-color: var(--header-bg-dark-light);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-sizing: border-box;
+
+}
+
+.row:nth-child(2) .social {
+     list-style-type: none;
+
+}
+.row:nth-child(2) .social li {
+            color: gainsboro;
+            display: inline-block;
+            padding: 3px;
+
+
+
+
+}
+
+
+/*main menu*/
+
+.row:last-child{
+        background-color: var(--main-red);
+        color: white;
+        height: 40px;
+
+}
+
+
+.row:last-child .main-menu{
+   list-style-type: none ;
+    height: 100%;
+}
+.row:last-child .main-menu li{
+    display: inline-block;
+    height: 100%;
+}
+.row:last-child .main-menu li a{
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+}
+
+.row:last-child .main-menu li a:hover{
+       background-color: var(--header-bg-dark);
+
+}
