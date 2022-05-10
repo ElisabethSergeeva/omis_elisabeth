@@ -1,0 +1,82 @@
+:root {
+       --left-column-text-color:white;
+}
+
+
+
+.leftCol {
+        background-image: url('../img/bg.webp');
+        background-size: cover;
+        color: var(--left-column-text-color);
+        
+}       
+
+.leftCol a {
+        color: var(--left-column-text-color);
+
+}
+
+h3 {
+     text-transform: uppercase;
+
+}
+
+
+
+/* block 1- contact*/
+
+
+
+
+.contact-phone, .contact-web, .contact-address {
+     position: relative;
+     left: 25px;
+     display: block;
+     margin-bottom: 15px;
+
+}
+
+.contact-phone i.bi, .contact-web i.bi, .contact-address i.bi {
+     position: absolute;
+     left: -25px;
+     font-size: 22px;
+
+
+}
+
+.contact-phone a, .contact-web a, .contact-address a {
+     display: block;
+     width: 100%;
+     line-height: 18px;
+
+}
+.skills {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     
+
+
+}
+
+.skills .bi:not(.myProgress .bi){
+               display: flex;
+               width: 50px;
+               height: 50px;
+               border-radius: 50%;
+               border: 3px solid white;
+
+               font-size:30px;
+               align-items: center;
+               justify-content: center;
+
+}
+
+
+
+
+
+.myProgress   .bi{
+        font-size: 7px;
+
+}
