@@ -1,6 +1,6 @@
 :root {
-       --left-column-text-color:white;
-       --main-bg: rgb(34, 34, 231);
+     --left-column-text-color: white;
+     --main-bg: rgb(34, 34, 231);
 }
 
 .leftCol {
@@ -9,43 +9,31 @@
 }
 
 
-.leftCol::before {
-        content: '';
-        background-image: url('../img/bg.webp');
-        position: absolute;
-        top: 0;
-        left: 10px;
-        right: 10px;
-        bottom: 0;
-        z-index: -1;
-        background-size: cover ;
-        
-        
-}       
 
 .leftCol a {
-        color: var(--left-column-text-color);
+     color: var(--left-column-text-color);
 
 }
 
 h3 {
      text-transform: uppercase;
+     margin-top: 20px;
 
 }
 
 
 .iconsRow .col {
-       text-align: center;
+     text-align: center;
 
 }
 
 .iconsRow .col div {
-    text-transform: uppercase;
+     text-transform: uppercase;
 
 }
 
-.iconsRow  .col .bi {
-          font-size: 40px;
+.iconsRow .col .bi {
+     font-size: 40px;
 
 }
 
@@ -55,26 +43,31 @@ h3 {
 
 
 
-.contact-phone, .contact-web, .contact-address {
+.contact-phone,
+.contact-web,
+.contact-address {
      position: relative;
      left: 25px;
      display: flex;
-      align-items: center;
-      margin-bottom: 15px;
-      height: 35px;
+     align-items: center;
+     margin-bottom: 15px;
+     height: 35px;
+     width: 75px;
+}
+
+.contact-phone .description {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     height: 100%;
+
 
 }
- .contact-phone .description {
-         display: flex;
-         flex-direction:column ;
-         justify-content: center;
-         height: 100%;
-         
-
- }
 
 
-.contact-phone i.bi, .contact-web i.bi, .contact-address i.bi {
+.contact-phone i.bi,
+.contact-web i.bi,
+.contact-address i.bi {
      position: absolute;
      left: -25px;
      font-size: 22px;
@@ -82,82 +75,97 @@ h3 {
 
 }
 
-.contact-phone a, .contact-web a, .contact-address a {
+.contact-phone a,
+.contact-web a,
+.contact-address a {
      display: block;
      width: 100%;
      line-height: 18px;
 
 }
+
 .skills {
      display: flex;
      flex-direction: column;
      align-items: center;
-     
+
 
 
 }
 
-.skills .bi:not(.myProgress .bi){
-               display: flex;
-               width: 50px;
-               height: 50px;
-               border-radius: 50%;
-               border: 3px solid white;
+.skills .bi:not(.myProgress .bi) {
+     display: flex;
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     border: 3px solid white;
 
-               font-size:30px;
-               align-items: center;
-               justify-content: center;
-
-}
-
-
-
-
-
-.myProgress   .bi{
-        font-size: 7px;
+     font-size: 30px;
+     align-items: center;
+     justify-content: center;
 
 }
 
 
 
-.linksRow{
+
+
+.myProgress .bi {
+     font-size: 7px;
+
+}
+
+
+
+.linksRow {
      display: flex;
      flex-direction: column;
      align-items: center;
-     
-      
-}
-
-
-.linksRow a{
-   margin: 5px;
-   width:150px;
-   font-size: 15px;
-   font-style:normal;
-}
-
-
-
-
-
-
-
-.linksRow a svg{
-      color:white;
-       width: 40px;
-       height: 40px;
-       padding: 10px;
-       border-radius: 50%;
-       border: 1px solid black;
-       background-color: black;
 
 
 }
+
+
+.linksRow a {
+     margin: 5px;
+     width: 150px;
+     font-size: 15px;
+     font-style: normal;
+}
+
+
+
+
+
+
+
+.linksRow a svg {
+     color: white;
+     width: 40px;
+     height: 40px;
+     padding: 10px;
+     border-radius: 50%;
+     border: 1px solid black;
+     background-color: black;
+
+
+}
+
 
 /* cv Title */
 
-.cvTitle{
+
+
+.titleRow {
+     height: 160px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+
+
+}
+
+.cvTitle {
      background-color: var(--main-bg);
      height: 80px;
      overflow: hidden;
@@ -166,25 +174,168 @@ h3 {
 }
 
 
-.cvTitle span{
-            background-color: white;
-            font-size: 60px;
-            text-transform: uppercase;
-            font-size: bold;
-            line-height: 80px;
-            letter-spacing: -5px;
-            padding: 0;
-            color: var(--main-bg);
-            padding-right: 15px;
+.cvTitle span {
+     background-color: white;
+     font-size: 60px;
+     text-transform: uppercase;
+     font-size: bold;
+     line-height: 80px;
+     letter-spacing: -5px;
+     padding: 0;
+     color: var(--main-bg);
+     padding-right: 15px;
 
-            
+
 }
 
-.cvSubTitle { 
+.cvSubTitle {
      text-transform: uppercase;
      color: gray;
      letter-spacing: 7px;
      font-size: 10px;
      font-weight: 100px;
+
+}
+
+/*quete row*/
+
+.quoteRow {
+     background-image: url('../img/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28313.webp');
+     color: white;
+}
+
+.quoteRow img {
+     width: 25%;
+
+}
+
+
+.quoteRow .bi-quote {
+     position: relative;
+     color: var(--main-bg);
+     text-transform: uppercase;
+     left: 35px;
+     font-size: normal;
+     display: inline-block;
+     width: 95%;
+}
+
+
+.quoteRow .bi-quote::before {
+
+     position: absolute;
+     color: var(--main-bg);
+     font-size: 40px;
+     left: -50px;
+}
+
+
+.quoteRow .quoteAuthor {
+     color: white;
+
+}
+
+/*Progress bar*/
+
+.progress {
+     border-radius: 0;
+     height: 40px;
+     margin-bottom: 16px;
+
+}
+
+.progress-bar {
+     background-color: var(--main-bg);
+     text-transform: uppercase;
+     text-align: left;
+     font-weight: bold;
+     padding-left: 15px;
+
+
+}
+
+
+.progress span {
+     color: black;
+     font-weight: bold;
+     padding-left: 15px;
+     height: 100%;
+     display: flex;
+     align-items: center;
+
+
+}
+
+/*column block*/
+.subColumn {
+     background-color: gainsboro;
+     border-right: 6px solid white;
+
+
+}
+
+
+
+.blackTitle {
+     text-transform: uppercase;
+     color: black;
+     font-size: 35px;
+     font-weight: bold;
+     margin-bottom: 20px;
+}
+
+
+.colBlock {
+     margin-bottom: 20px;
+
+}
+
+.yearsTitle {
+     background-color: var(--main-bg);
+     color: white;
+     padding: 3px 10px 3px 10px;
+     font-weight: bold;
+
+}
+
+.defaultTitle {
+     text-transform: uppercase;
+     font-size: 18px;
+     margin-top: 5px;
+     margin-bottom: 0;
+}
+
+
+.leftCol::before {
+     content: '';
+     background-image: url('../img/bg.webp');
+     position: absolute;
+     top: 0;
+     left: 0px;
+     right: 0px;
+     bottom: 0;
+     z-index: -1;
+     background-size: cover;
+
+}
+
+@media only screen and (max-width:576px) {
+      /*phone */
+
+      .leftCol::before {
+          content: '';
+          background-image: url('../img/bg.webp');
+          position: absolute;
+          top: 0;
+          left: 10px;
+          right: 10px;
+          bottom: 0;
+          z-index: -1;
+          background-size: cover;
+     
+     
+     }
+     
+
 
 }
