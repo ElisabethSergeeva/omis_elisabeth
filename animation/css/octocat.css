@@ -1,23 +1,139 @@
-body{
+body {
     background-color: aqua;
 }
 
 
-.octocat{
+.octocat {
     background: url('../img/octocat.png');
     display: block;
     width: 200px;
     height: 301px;
-    background-position-x: -200px;
+    background-position-x: 0px;
+    margin:auto;
+ 
+    animation-name: OctocatMove, OctocatChangePicture;
+    animation-duration: 10s, 10s;
+    animation-timing-function: linear, steps(1);
+
+}
+
+.bubble {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    filter: opacity(1);
+    bottom: 0;
+    position: absolute;
+
+    animation-name: BubbleMoveUp, BubbleMoveLeftRight;
+    animation-iteration-count: infinite,infinite;
+    animation-timing-function: cubic-bezier(0.43, 0.37, 0.48, 0.45);
+    animation-direction: normal,alternate;
+    animation-iteration-count: infinite;
 
 
 }
 
-.bubble{}
+.bubble-1 {
+    left: 5vw;
+    animation-delay: 1s,;
+    animation-duration: 10s,3s;
 
-.bubble-1{}
-.bubble-2{}
-.bubble-3{}
-.bubble-4{}
-.bubble-5{}
-.bubble-6{}
+
+}
+
+.bubble-2 {
+    left: 20%;
+    animation-duration: 5s,3s;
+
+
+}
+
+.bubble-3 {
+    left: 40%;
+    animation-duration: 7s,3s;
+
+}
+
+.bubble-4 {
+    left: 60%;
+    animation-duration: 6s,3s ;
+}
+
+.bubble-5 {
+    left: 75%;
+    animation-duration: 10s,3s;
+}
+
+.bubble-6 {
+    left: 90%;
+    animation-duration:8s,3s;
+}
+
+
+@keyframes BubbleMoveUp {
+   
+
+    to{
+        transform: translateY(-100vh);
+    }
+}
+
+@keyframes BubbleMoveLeftRight {
+    from{
+      /*transform:translateX(-15px);*/
+
+    }
+    to{
+      /* transform: translateX(+15px);*/
+
+
+    }
+    
+}
+
+/* .octocat keyframes*/
+
+@keyframes OctocatMove {
+    0%{}
+    25%{
+         transform: translateY(calc(50vh - 150px));
+         
+
+    }
+    50%{
+        transform: translateY(calc(50vh - 150px)) translateX(200px);
+    }
+    
+    
+    75%{
+        transform: translateX(200px)  translateY(-25px);
+
+    }
+    100%{
+      transform: translateY(-25px)  translateX(-250px);
+    
+    }
+
+    
+}
+
+
+
+@keyframes OctocatChangePicture {
+
+    25%{
+        background-position-x: 400px;
+    }
+    50%{
+        background-position-x:600px ;
+    }
+    
+    75%{
+        background-position-x:200px ;
+    }
+    100%{}
+    
+}
