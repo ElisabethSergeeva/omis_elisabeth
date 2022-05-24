@@ -1,0 +1,46 @@
+
+.blue-font{
+    color: blue;
+}
+
+.green-font{
+    color: green;
+}
+.black-font{
+   
+   color: orange;
+
+}
+
+/*background*/
+
+.bg-blue{
+   background-color: blue;
+
+}
+
+.bg-green{
+     background-color: green;
+
+}
+.bg-black{
+    background-color: black;
+
+
+}
+.header{
+
+    display: block;
+    height: 50px;
+
+}
+
+.box {
+       display: block;
+       width: 250px;
+       height: 500px;
+       border: 1px solid gray;
+       margin: 10px;
+       float: left;
+
+}
